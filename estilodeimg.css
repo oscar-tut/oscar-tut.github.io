@@ -1,22 +1,29 @@
+h1{
+    text-align: center;
+    font-size: 300px;
+    color:  darkgreen;
+
+    }
+
 .figure{
     display: grid;
     grid-template: 1fr/1fr;
-    grid-template-areas: "img";
+    grid-template-areas: "img1";
     width: 300px;
     height: 400px;
     margin: 60px auto;
 }
+
 .img1{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    grid-area: img;
+    grid-area: img1;
 }
 
-
 .figure::after{
-    content: "Hola";
-    grid-area: img;
+    content: "Hola Amorcito";
+    grid-area: img1;
     width: 100%;
     height: 100%;
     background-color: rgba(201, 57, 71, 0.66);
@@ -32,4 +39,211 @@
 }
 .figure:hover::after{
     clip-path: circle(150% at top right);
+}
+
+.i2{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img2";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img2;
+}
+
+.i2::after{
+    content: "Solo pa decirte";
+    grid-area: img2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(145, 191, 36, 0.66);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+
+.i2:hover::after{
+    clip-path: circle(150% at top right);
+}
+
+.i3{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img3";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.img3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img3;
+}
+
+.i3::after{
+    content: "Te quiero yo";
+    grid-area: img3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 132, 242, 0.66);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+
+.i3:hover::after{
+    clip-path: circle(150% at top right);
+}
+
+.i4{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img4";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.img4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img4;
+}
+
+.i4::after{
+    content: "Y tú a mí";
+    grid-area: img4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 57, 122, 0.66);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+
+.i4:hover::after{
+    clip-path: circle(150% at top right);
+}
+
+.i5{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img5";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.img5{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img5;
+}
+
+.i5::after{
+    content: "Juntos por siempre, obvi";
+    grid-area: img5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 80, 180, 0.66);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+
+.i5:hover::after{
+    clip-path: circle(150% at top right);
+}
+
+.i6{
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img6";
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.img6{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img6;
+}
+
+.i6::after{
+    content: "Besos en todos lados";
+    grid-area: img6;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 57, 71, 0.032);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(0 at top right);
+    transition: clip-path .4s;
+}
+
+
+.i6:hover::after{
+    clip-path: circle(150% at top right);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    min-height: 100vh;
+    width: 80%;
+    outline: 10px solid #000;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(min(350px,100%), 1fr));
+    gap: 30px;
+}
+.i1 .i2 .i3 .i4 .i5 .i6{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
