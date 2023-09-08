@@ -1,0 +1,20 @@
+h1{
+    font-family: garamond arial sans-serif;
+    text-align: center;
+    color: blueviolet;
+}
+#agrupacionesdefotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+#agrupacionesdefotos>div{
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+#agrupacionesdefotos>div:hover{
+    background-color: aqua;
+
+}
